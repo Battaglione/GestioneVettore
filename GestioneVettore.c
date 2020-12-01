@@ -10,7 +10,7 @@ int main (){
         scanf("%d",&v[i1]);
     }
     do{
-        ripet, i1, i2, temp, input = 0;
+        i1, i2, temp, input = 0;
         printf("Scegli una tra queste opzioni:\n 1) Caricare il vettore\n 2) Visualizzare il vettore\n 3) Ordinare il vettore \n 4) Cercare un elemento nel vettore \n 5) Cercare la frequenza di un numero (quante volte compare nel vettore)\n 6) Fine\n");
         scanf("%d",&scelta);
     
@@ -74,6 +74,7 @@ int main (){
                     }
                     break;
                 case 5:
+                    ripet = 0;
                     printf("Inserisci un numero\n");
                     scanf("%d",&input);
                     for(i1 = 0; i1 < N; i1++){
