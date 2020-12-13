@@ -17,6 +17,7 @@ int main (){
         switch(scelta){
             default:
                 printf("Input non valido!");
+                break;
             case 1:
                 for(i1 = 0; i1 < N; i1++){
                     printf("Inserire il valore numero %d del vettore\n", i1 + 1);
@@ -70,7 +71,7 @@ int main (){
                         }
                     }
                     if(ripet == 0){
-                        printf("Il numero non e' presente nel vettore");
+                        printf("Il numero non e' presente nel vettore\n");
                     }
                     break;
                 case 5:
