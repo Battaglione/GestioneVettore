@@ -11,7 +11,8 @@ int main (){
     }
     do{
         i1, i2, temp, input = 0;
-        printf("Scegli una tra queste opzioni:\n 1) Caricare il vettore\n 2) Visualizzare il vettore\n 3) Ordinare il vettore \n 4) Cercare un elemento nel vettore \n 5) Cercare la frequenza di un numero (quante volte compare nel vettore)\n 6) Fine\n");
+        system("cls");
+        printf("*************************************************************************\nScegli una tra queste opzioni:\n 1) Caricare il vettore\n 2) Visualizzare il vettore\n 3) Ordinare il vettore \n 4) Cercare un elemento nel vettore \n 5) Cercare la frequenza di un numero (quante volte compare nel vettore)\n 6) Fine\n*************************************************************************\n");
         scanf("%d",&scelta);
     
         switch(scelta){
@@ -28,6 +29,7 @@ int main (){
                 for(i1 = 0; i1 < N; i1++){
                     printf("%d\n",v[i1]);
                 }
+                system("pause");
                 break;
             case 3:
                 printf("Ordinamento crescente (1) o decrescente (2)?\n");
@@ -45,6 +47,7 @@ int main (){
                         for(i1 = 0; i1 < N; i1++){
                             printf("%d\n", v[i1]);
                         }
+                        system("pause");
                 }
                 if(input == 2){
                         for(i1 = 0; i1 < N; i1++){
@@ -59,6 +62,7 @@ int main (){
                     for(i1 = 0; i1 < N; i1++){
                         printf("%d\n", v[i1]);
                     }
+                    system("pause");
                 }
                 break;
                 case 4:
@@ -68,10 +72,12 @@ int main (){
                         if(v[i1] == input){
                             ripet = 1;
                             printf("Il numero e' presente nel vettore ed e' il numero %d\n", i1 + 1);
+                            system("pause");
                         }
                     }
                     if(ripet == 0){
                         printf("Il numero non e' presente nel vettore\n");
+                        system("pause");
                     }
                     break;
                 case 5:
@@ -84,6 +90,7 @@ int main (){
                         }
                     }
                     printf("Il numero viene ripetuto %d volte \n", ripet);
+                    system("pause");
                     break;
                 case 6:
                     fine = 1;
