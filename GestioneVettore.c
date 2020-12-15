@@ -76,7 +76,7 @@ int main (){
                             break;
                         }
                     }
-                    if(ripet == 0){
+                    if(ripet != 1){
                         printf("Il numero non e' presente nel vettore\n");
                         system("pause");
                         break;
