@@ -73,11 +73,13 @@ int main (){
                             ripet = 1;
                             printf("Il numero e' presente nel vettore ed e' il numero %d\n", i1 + 1);
                             system("pause");
+                            break;
                         }
                     }
                     if(ripet == 0){
                         printf("Il numero non e' presente nel vettore\n");
                         system("pause");
+                        break;
                     }
                     break;
                 case 5:
