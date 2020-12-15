@@ -14,7 +14,7 @@ int main (){
         system("cls");
         printf("*************************************************************************\nScegli una tra queste opzioni:\n 1) Caricare il vettore\n 2) Visualizzare il vettore\n 3) Ordinare il vettore \n 4) Cercare un elemento nel vettore \n 5) Cercare la frequenza di un numero (quante volte compare nel vettore)\n 6) Fine\n*************************************************************************\n");
         scanf("%d",&scelta);
-    
+        printf("*************************************************************************\n");
         switch(scelta){
             default:
                 printf("Input non valido!");
